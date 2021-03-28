@@ -1,14 +1,16 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
-*{
+body{
     padding: 0;
     margin: 0;
-}
-.bg{
-    background: url(images/bg.jpg);
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 50, 0),rgba(0, 0, 50, 0)),url(../images/bg.jpg);
     background-size: cover;
-    height: 100vh;
+    background-position: center;
+    font-family: tahoma;
 }
+
+
+
 .navbar{
     height: 80px;
     width: 100%;
@@ -55,50 +57,46 @@
     padding: 15px;
     
 }
-.bg .center{
-    position: absolute;
-    top: 25%;
-    left: 20%;
-    font-family: tahoma;
-    user-select: none;
-}
-.center h1{
+.text{
+    margin-top: 100px;
     color: white;
-    font-size: 70px;
-    font-weight: bold;
-    width: 900px;
-    text-align: center;
-    text-shadow: 5px 5px 5px black;
-}
-.center h2{
-    color: white;
-    font-size: 55px;
-    font-weight: bold;
-    width: 885px;
-    margin-top: 10px;
-    text-align: center;
-    text-shadow: 5px 5px 5px black;
-}
-.center ul{
-    margin: 35px 280px;
-    list-style: none;
+    text-shadow:5px 5px 5px black;
     
 }
-
-.bg .center ul li a{
-    text-align: center;
-    display: block;
-    margin: 30px;
-    padding: 25px;
-    border: 2px solid orangered;
-    text-decoration: none;
-    font-weight: bold;
-    background: rgba(0,0,0,0.4);
-    border-radius: 22px 22px;
+.text h2{
     color: white;
-    transition: all 0.6s linear;
+    font-weight: bold;
+    font-size: 40px;
 }
-.bg .center ul li a:hover{
+.text h1{
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+}
+form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+.form-control{
+    width: 600px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid orangered;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+input{
+    height: 45px;
+}
+form .submit{
+    border: 1px solid orangered;
+    background: rgba(255, 69, 0, 0.5);
+    transition: all 0.6s linear;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+form .submit:hover{
     background: orangered;
-    font-size: 20px;
 }
